@@ -57,3 +57,28 @@ print('------------------------')
 probability_4 = stats.binom.cdf(20, 100, 0.5)
 print('投擲硬幣出現正面的機率為 0.5，投擲100次，出現小於等於20次為正面的機率為多 = ', probability_4)
 print('------------------------')
+
+
+# 二項分布在金融市場的應用
+roi = pd.read_csv('Statistics\stock_2633.csv')
+ROI = roi['ROI']
+count = len(ROI)               # 總數
+rise_count = len(ROI[ROI>0])   # 上漲的數量
+p = rise_count/count           # 上漲機率
+
+'''
+例題 : 估計 N 個交易日中，有 K 個交易日中上漲的機率為多少
+'''
+N = 10
+K = 5
+probability_5 = stats.binom.pmf(K, N, p)
+print('估計 {} 個交易日中，有 {} 個交易日中上漲的機率為 = '.format(N, K), probability_5)
+print('------------------------')
+
+'''
+例題 : 估計 N 個交易日中，小於等於 K 個交易日中上漲的機率為多少
+'''
+N = 10
+K = 5
+probability_6 = stats.binom.cdf(K, N, p)
+print('估計 {} 個交易日中，小於等於 {} 個交易日中上漲的機率為 = '.format(N, K), probability_6)
