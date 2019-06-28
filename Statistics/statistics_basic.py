@@ -5,7 +5,7 @@ import pandas as pd
 ---- 參考 P248
 '''
 
-stock_3231 = pd.read_csv('financial\Statistics\stock_month_3231.csv' , encoding='utf-8')
+stock_3231 = pd.read_csv('financial\Statistics\excel\stock_month_3231.csv' , encoding='utf-8')
 
 # 以下以 收盤價 作為數據分析項目
 close_price = stock_3231['收盤價']

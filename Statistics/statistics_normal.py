@@ -37,7 +37,7 @@ print('----------------------------')
 '''
 
 # 取得 ROI 的資料
-ret = pd.read_csv('Statistics\stock_2633.csv')['ROI'].tail(21)   # 扣除掉第一個ROI為0的數據
+ret = pd.read_csv('excel\Statistics\stock_2633.csv')['ROI'].tail(21)   # 扣除掉第一個ROI為0的數據
 
 # 取得收益率序列的均值
 ret_mean =ret.mean()
