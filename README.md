@@ -57,4 +57,7 @@
 
 
 ## Line Notify 
-可以使用 line 通知的功能
+##### **Sample**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用 line 通知的功能
+##### **Schedule**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入 schedule 執行 line notify 的功能
