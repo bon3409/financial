@@ -20,6 +20,7 @@ concat = pd.concat(appended_data, axis=1)
 # 求共變異數矩陣(用來判斷兩個變數間的相關性)
 cov_mat = concat.cov()
 
-
+concat.plot()
+plt.show()
 
 

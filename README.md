@@ -1,4 +1,4 @@
-# Python 量化投資說明
+# 1. Python 量化投資說明
 
 ## 機率密度函數 PDF (Probability Density Function)
 
@@ -57,7 +57,12 @@
 
 
 ## Line Notify 
-##### **Sample**.py
+##### 1. **Sample**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用 line 通知的功能
-##### **Schedule**.py
+##### 2. **Schedule**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加入 schedule 執行 line notify 的功能
+
+***
+# 2. K 線圖繪製與分析
+##### 1. **CandlestickSample**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介紹繪製 K 線圖的功能，與範本
