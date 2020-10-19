@@ -66,3 +66,6 @@
 # 2. K 線圖繪製與分析
 ##### 1. **CandlestickSample**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介紹繪製 K 線圖的功能，與範本
+
+##### 2. **CandlestickPattern1**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用程式找出「早晨之星」反轉的時間點
