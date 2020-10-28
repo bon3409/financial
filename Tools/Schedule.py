@@ -1,14 +1,15 @@
 import time
 import schedule
 import datetime
-from Utility import LineNotify
+from LineService import service
 
 # 利用 schedule 傳送訊息到 line
   
 def job():
     message = 'schedule 的測試(每五秒)'
     print(datetime.datetime.now())
-    LineNotify.lineNotifyMessage(message)
+    line = service()
+    line.lineNotifyMessage(message)
 
 # schedule 的執行間隔
 schedule.every(5).seconds.do(job)
