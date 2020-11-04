@@ -69,3 +69,6 @@
 
 ##### 2. **CandlestickPattern1**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用程式找出「早晨之星」反轉的時間點
+
+##### 3. **CandlestickPattern2**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用程式找出「烏雲蓋頂」的時間點
