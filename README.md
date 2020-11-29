@@ -72,3 +72,8 @@
 
 ##### 3. **CandlestickPattern2**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用程式找出「烏雲蓋頂」的時間點
+
+***
+# 3. 動量交易策略(Momentum Trading Strategy)
+##### 1. **Strategy_1**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用作差法求動量值

@@ -1,4 +1,30 @@
 {
     "python.pythonPath": "C:\\Users\\GF75\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "editor.tokenColorCustomizations": null
+    "editor.tokenColorCustomizations": null,
+    "editor.semanticTokenColorCustomizations": {
+        "[Default Dark+]": {
+            "enabled": true,
+            "rules": {
+                "type":  "#26A69A",
+                "namespace": "#ffffff",
+                "function": "#fcfab0",
+                "variable": "#54cbfa",
+                // "number": "#ffffff",
+                // "string": {
+                //     "foreground": "#ffffff",
+                //     "italic": true
+                // },
+                // "comment": {
+                //     "foreground": "#07965f",
+                //     "fontStyle": "italic"
+                // },
+                // "variable.readonly.defaultLibrary": "#2f9df7",
+                // "macro": "#fc5e5ef5",
+                // "keyword": "#fd73d4",
+                // "operator": "#ffffff",
+                // "type.modification": "#20f1dd",
+                // "punctuation": "#9e3c19"
+            }
+        }
+    },
 }

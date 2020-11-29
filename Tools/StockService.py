@@ -1,9 +1,14 @@
 import ffn
+import matplotlib
+from pandas.plotting import register_matplotlib_converters
 from datetime import date
 
 class stock():
     def __init__(self):
         super().__init__()
+
+        matplotlib.use('TkAgg')  # 解決出圖問題，參考 https://www.jianshu.com/p/3f4b89aaf057
+        register_matplotlib_converters() # 解決 pandas 要出圖的錯誤
 
     def getData(self, code, type , start_day):
         """取得指定股票的交易資訊
