@@ -29,3 +29,19 @@ class stock():
         data = data.rename(columns={f"{code}{type}open": 'Open', f"{code}{type}high": 'High', f"{code}{type}low": 'Low', f"{code}{type}close": 'Close'})
 
         return data
+
+    def getMomentum(self, closePrice, period):
+        """用【作差法】取得動量值，參考書本 p544
+
+        Args:
+            closePrice: 股票收盤價的 DataFrame
+            period (integer)): 期數，滯後的天數
+        """
+
+        # 滯後 N 期的收盤價
+        logClose = closePrice.shift(period)
+
+        # 計算 N 期的動量值
+        momentum = (closePrice - logClose).dropna()
+
+        return momentum

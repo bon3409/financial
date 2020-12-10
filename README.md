@@ -77,3 +77,6 @@
 # 3. 動量交易策略(Momentum Trading Strategy)
 ##### 1. **Strategy_1**.py
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用作差法求動量值
+
+##### 2. **Strategy_2**.py
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用作除法求動量值
