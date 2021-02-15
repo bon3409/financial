@@ -8,10 +8,7 @@ import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 
-class Tools():
-    def __init__(self):
-        super().__init__()
-
+class Tools:
     def getStockDataByYahoo(self, code, period, interval):
         """透過 Yahoo Finance 的 API 取得股票資訊
 
