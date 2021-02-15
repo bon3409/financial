@@ -1,5 +1,6 @@
 # 共用的小工具
 
+from datetime import datetime
 import pandas as pd
 import numpy as np
 import fix_yahoo_finance as yf
@@ -73,6 +74,12 @@ class Tools:
             [directory]: 轉換過後的格式
         """
         directory = {}
+
+        # 把時間加入 dict
+        timestampArray = data.index.values.astype(np.int64) // 10 ** 9
+        time = np.array([datetime.fromtimestamp(timestamp) for timestamp in timestampArray])
+        directory['time'] = time
+
         for column in data.columns:
             array = np.array(data[column].values)
             directory[column.lower()] = (array)

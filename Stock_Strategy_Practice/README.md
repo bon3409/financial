@@ -8,3 +8,5 @@
   * 檔案名稱: moving_average.py
 * 技巧 28 【程式】繪製價格與 MA 重疊表
   * 檔案名稱: draw_moving_average.py
+* 技巧 42 【操作】Talib 技術指標計算
+  * 檔案名稱: Talib_API.py
