@@ -1,6 +1,7 @@
 # 共用的小工具
 
 import pandas as pd
+import numpy as np
 import fix_yahoo_finance as yf
 import matplotlib.pyplot as plt
 
@@ -61,3 +62,19 @@ class Tools:
         MA = pd.DataFrame({'MA': MAArray}, index=Time)
 
         return MA
+
+    def transformToTalib(self, data):
+        """將資料轉換成 Talib 需要的格式 (資料來源需要是從 yahoo finance 取得的資料)
+
+        Args:
+            data (Dataframe): 透過 yahoo finance 拿到的股票資料
+
+        Returns:
+            [directory]: 轉換過後的格式
+        """
+        directory = {}
+        for column in data.columns:
+            array = np.array(data[column].values)
+            directory[column.lower()] = (array)
+
+        return directory
